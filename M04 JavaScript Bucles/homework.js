@@ -162,7 +162,7 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-      if (num == 0 || num == 1 || (Math.sign(num)!==1)) {
+      if (num <2) {
       return false;
 } else if (num === 2) {
 return true;
@@ -170,10 +170,9 @@ return true;
 for (let i = 2; i < num; i++) {
         if(num % i === 0) {
           return false;
-        } else {
-          return true;
-        }
    }
+}
+  return true;
 }
 
 function esVerdadero(valor) {
